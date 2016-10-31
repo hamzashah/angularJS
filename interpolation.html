@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title>INTERPOLATION</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.js"></script>
+		<script src="angular.min.js"></script>
+		<script src="interpolation.js"></script>
+</head>
+<body>
+<!-- Is div k andar jo controller hai wo is controller ki waja se
+js wali file k controller se bydefault hamen yaha available ho ja thi hain-->
+	<div ng-controller="controller">
+		<h1>Interpolation</h1></br>
+<!-- Yeah HTML tha, interpolation wala variable dekha, controller main gaya
+us ka matlab search kia aur wapis la k hamen de diya -->		
+		<h2>My name is {{ name + " and I'm a" + developer + "."}}</h2>
+	</div>
+</body>
+</html>

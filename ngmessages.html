@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-App="myApp">
+<head>
+	<title>ngMESSAGES</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.js"> </script>
+	<script src="angular.min.js"></script>
+	<script src="https://code.angularjs.org/1.5.0-rc.0/angular-messages.min.js"></script>
+	<script src="ngmessages.js"></script>
+</head>
+<body>
+
+<div ng-controller="thecontroller">
+	<form name="myForm">
+      <label>Enter text:
+          <input type="text" ng-model="field" name="myField" required minlength="5" />
+      </label>
+      <div ng-messages="myForm.myField.$error" role="alert">
+          <div ng-message="required">You did not enter a field</div>
+          <div ng-message="minlength, maxlength">
+          Your email must be between 5 and 100 characters long
+          </div>
+      </div>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title>ng-if DIRECTIVES</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.js"> </script>
+	<script src="angular.min.js"></script>
+	<script src="ngshowdirectives.js"></script>
+</head>
+<body>
+	<div ng-controller="controller">
+		<input type="text" name="name" ng-model="handle"/>
+	</div>
+	<div class="alert" ng-show="handle.length!=characters">
+		 You can type only 6 length characters
+	</div>
+	<h2>String approx//{{handle}}</h2>
+</body>
+</html>

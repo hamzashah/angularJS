@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title>WATCHERS</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.js"> </script>
+		<script src="angular.min.js"></script>
+		<script src="watcher handson.js"></script>
+</head>
+<body>
+	<div ng-controller="controller">
+			<input type="text" name="name" ng-model="catch"/>
+				<hr>
+			<h1>facebook.com</h1><p>{{catch}}</p>			
+	</div>
+	</body>
+</html>
+<!-- 
+	JS main jo events hote hian (keypress,mousepress etc) tw angularJS kia kr tha hai, jab yeh events browser main in-built hote hain tw in ko yeh extend kr tha hai apne angular extend se apni kuch taqate joar k andar. Is k pass do cheezen hoti hain
+	1. watcher
+	2. digest loop/cycle
+-->

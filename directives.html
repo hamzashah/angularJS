@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title>DIRECTIVES/TWO-WAY DATA BINDING</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.js"> </script>
+		<script src="angular.min.js"></script>
+		<script src="directives.js"></script>
+</head>
+<body>
+	<div ng-controller="controller">
+		<div>
+			<label>
+				What's your facebook account
+			</label>	
+				<!--Is input field wale text main jo value likhi ja rhi hai
+				wo doosri file($scope.handle) pe ja rhi ha phr waha se uth k idr handle(jo curly bracket) wali jaga pe arahi hai. -->
+				<input type="text" name="name" ng-model="handle"/>
+				<hr>
+			<h1>facebook.com</h1><p>{{handle}}</p>			
+		</div>
+	</div>
+</body>
+</html>
+
+<!-- 
+	DIRECTIVES:
+		Kisi ko direction dena kisi ko kuch krne k liye bolna.
+-->
